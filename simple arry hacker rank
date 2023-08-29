@@ -1,1 +1,10 @@
+a=int(input())
+n=list(map(int,input().split()))
+b=0
+for i in n:
+    
+       
+    b=b+i
+print(b)
+    
 
