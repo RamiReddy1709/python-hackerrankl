@@ -1,0 +1,59 @@
+n=list(map(int,input().split()))
+n.sort()
+
+b=n.copy()
+n.pop(0)
+b.pop(4)
+print(sum(b),sum(n),end="")
+
+or
+
+n=list(map(int,input().split()))
+
+n.sort()
+a=[1:]
+b=[:-1]
+print(sum(b),sum(n),end="")
+
+or
+
+n=list(map(int,input().split()))
+n.sort()
+a=0
+b=0
+for i in n:
+    if i==n[-1]:
+        b=i
+for i in n:
+    if i==n[0]:
+        a=i
+print(sum(n)-b,sum(n)-a,end="")
+    
+or
+
+n=list(map(int,input().split()))
+n.sort()
+a=0
+b=0
+for i in n:
+    if i==n[-1]:
+        b=i
+for i in n:
+    if i==n[0]:
+        a=i
+print(sum(n)-b,sum(n)-a,end="")
+    
+or
+
+n=list(map(int,input().split()))
+n.sort()
+a=[]
+b=[]
+for i in n:
+    if i<n[-1]:
+        b.append(i)
+for i in n:
+    if i>n[0]:
+        a.append(i)
+print(sum(b),sum(a),end="")
+    
