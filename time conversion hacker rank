@@ -1,0 +1,18 @@
+a=input()
+
+
+if a[-2:]=="AM" and a[:2]=="12":
+        print("00"+a[2:-2])
+elif a[-2:]=="PM" and a[:2]=="12":
+        print(a[0:8])
+elif a[-2:]=="PM":
+        print(str(int(a[:2])+12)+a[2:8])   
+else:
+        print(a[0:8])
+        
+        
+        
+            
+   
+        
+        
