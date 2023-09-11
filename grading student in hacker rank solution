@@ -1,0 +1,26 @@
+a=int(input())
+g=[]
+for i in range(a):
+    n=int(input()) 
+
+    g.append(n)
+for i in range(0,len(g)):
+    
+    
+     if g[i]< 38:
+        continue
+     if g[i] >= 38:
+          if (g[i]+1)%5==0:
+             g[i]=g[i]+1
+             
+          elif (g[i]+2)%5==0:
+            g[i]=g[i]+2
+            continue
+print(*g,sep="\n")
+              
+              
+              
+          
+         
+        
+    
